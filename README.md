@@ -18,3 +18,4 @@ Developers who have experience with current technologies and contributed to proj
 - Django
 - Machine Learning and AI
 - CI/CD pipelines
+- Automate Workflows 

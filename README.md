@@ -17,3 +17,4 @@ Developers who have experience with current technologies and contributed to proj
 - MongoDB
 - Django
 - Machine Learning and AI
+- CI/CD pipelines

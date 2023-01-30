@@ -47,7 +47,7 @@ def projects(request):
     page = 'projects'
     number = 10
     context = {'page': page, 'number': number,
-               'message': msg, 'projects': projectList}
+               'projects': projectList}
     return render(request, 'projects/projects.html', context)
 
 

@@ -1,0 +1,44 @@
+{% extends 'main.html' %}
+{% block content %}
+
+<p>
+    Hello you are on the {{page}} page
+</p>
+
+{{message}}
+
+
+{% if number > 10 %}
+   <p>
+        Number is greater than 10
+   </p>
+
+{% elif number == 10 %}
+    <p>
+        Number is exactly 10
+    </p>
+
+{% else %}
+   <p>
+        Number is less than 10
+   </p>
+
+{% endif %}
+
+<h1>Our Projects!!!</h1>
+
+<p>
+    Lets create a Django project for Finance !!!
+</p>
+
+<hr>
+
+<h1>Your project</h1>
+
+<ul>
+    {% for project in projects %}
+        <li>{{project.id}}. Title: <a href="{% url 'project' project.id %}">{{project.title}}</a>, Description:{{project.description}}</li>
+    {% endfor %}
+</ul>
+
+{% endblock content %}
